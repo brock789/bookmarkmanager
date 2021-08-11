@@ -1,8 +1,9 @@
 # in Gemfile
 source 'https://rubygems.org'
 
-gem 'capybara'
-gem 'rspec'
+gem 'capybara', group: :test
+gem 'pg'
+gem 'rspec' , group: :test
 gem 'sinatra'
 gem 'sinatra-contrib'
 
