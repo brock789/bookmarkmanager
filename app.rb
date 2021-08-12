@@ -25,10 +25,13 @@ class BookMarkManager < Sinatra::Base
   end
   
  
-    post '/bookmarks' do
-        Bookmark.create(url: params[:url])
-        redirect '/bookmarks'
-      end
+    # in app.rb
+
+  post '/bookmarks' do
+    Bookmark.create(url: params[:url], title: params[:title])
+    redirect '/bookmarks'
+  end
+  
 
   
   
